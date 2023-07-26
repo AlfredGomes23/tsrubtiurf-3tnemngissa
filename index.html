@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
     <!-- favicon link -->
-    <!-- <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <!-- font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +23,9 @@
                 extend: {
                     fontFamily: {
                         'lato': ['Lato', 'sans- serif'],
+                    },
+                    boxShadow: {
+                        'sub-banner': '0px 8px 60px 0px rgba(0, 0, 0, 0.05)',
                     }
                 }
             }
@@ -79,15 +82,19 @@
             </div>
         </nav>
         <!-- banner/hero part -->
-        <section class="max-w-screen-xl max-h-[calc(100vh-77px)] px-5 mx-auto my-8 rou">
+        <section class="max-w-screen-xl max-h-[calc(100vh-77px)] relative px-5 mx-auto mt-8 mb-6 lg:mb-72">
             <div class="carousel w-full rounded-lg">
                 <!-- slide1 -->
                 <div id="slide1" class="carousel-item relative w-full">
                     <div class="w-full" style="background-image: url(./images/banner1.png); background-size: cover;">
-                        <div class="text-center" style="background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);">
-                            <h1 class="text-white text-4xl lg:text-7xl font-extrabold pt-10 lg:py-24">Exotic tastes at your <br> doorstep</h1>
-                            <p class="text-white text-xl font-medium mt-6 mb-8">We supply highly quality organic products</p>
-                            <button class="text-white text-xl bg-[#F85559] px-7 py-4 mb-10 lg:mb-52 rounded-lg">Shop Now</button>
+                        <div class="text-center"
+                            style="background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);">
+                            <h1 class="text-white text-4xl lg:text-7xl font-extrabold pt-10 lg:pt-24 lg:pb-16">
+                                Exotic tastes at your <br> doorstep</h1>
+                            <p class="text-white text-xl font-medium mb-8">We supply highly quality organic products
+                            </p>
+                            <button class="text-white text-xl bg-[#F85559] px-7 py-4 mb-10 lg:mb-4 rounded-lg">Shop
+                                Now</button>
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -97,10 +104,14 @@
                 </div><!-- slide2 -->
                 <div id="slide2" class="carousel-item relative w-full">
                     <div class="w-full" style="background-image: url(./images/banner2.png); background-size: cover;">
-                        <div class="text-center" style="background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);">
-                            <h1 class="text-white text-4xl lg:text-7xl font-extrabold pt-10 lg:py-24">Exotic tastes at your <br> doorstep</h1>
-                            <p class="text-white text-xl font-medium mt-6 mb-8">We supply highly quality organic products</p>
-                            <button class="text-white text-xl bg-[#F85559] px-7 py-4 mb-10 lg:mb-52 rounded-lg">Shop Now</button>
+                        <div class="text-center"
+                            style="background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);">
+                            <h1 class="text-white text-4xl lg:text-7xl font-extrabold pt-10  lg:pt-24 lg:pb-16">
+                                Exotic tastes at your <br> doorstep</h1>
+                            <p class="text-white text-xl font-medium mb-8">We supply highly quality organic products
+                            </p>
+                            <button class="text-white text-xl bg-[#F85559] px-7 py-4 mb-10 lg:mb-44 rounded-lg">Shop
+                                Now</button>
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -110,10 +121,14 @@
                 </div><!-- slide3 -->
                 <div id="slide3" class="carousel-item relative w-full">
                     <div class="w-full" style="background-image: url(./images/banner3.png); background-size: cover;">
-                        <div class="text-center" style="background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);">
-                            <h1 class="text-white text-4xl lg:text-7xl font-extrabold pt-10 lg:py-24">Exotic tastes at your <br> doorstep</h1>
-                            <p class="text-white text-xl font-medium mt-6 mb-8">We supply highly quality organic products</p>
-                            <button class="text-white text-xl bg-[#F85559] px-7 py-4 mb-10 lg:mb-52 rounded-lg">Shop Now</button>
+                        <div class="text-center"
+                            style="background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);">
+                            <h1 class="text-white text-4xl lg:text-7xl font-extrabold pt-10  lg:pt-24 lg:pb-16">
+                                Exotic tastes at your <br> doorstep</h1>
+                            <p class="text-white text-xl font-medium mb-8">We supply highly quality organic products
+                            </p>
+                            <button class="text-white text-xl bg-[#F85559] px-7 py-4 mb-10 lg:mb-44 rounded-lg">Shop
+                                Now</button>
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -122,11 +137,16 @@
                     </div>
                 </div><!-- slide4 -->
                 <div id="slide4" class="carousel-item relative w-full">
-                    <div class="w-full h-full" style="background-image: url(./images/banner4.png); background-size: cover;">
-                        <div class="text-center" style="background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);">
-                            <h1 class="text-white text-4xl lg:text-7xl font-extrabold pt-10 lg:py-24">Exotic tastes at your <br> doorstep</h1>
-                            <p class="text-white text-xl font-medium mt-6 mb-8">We supply highly quality organic products</p>
-                            <button class="text-white text-xl bg-[#F85559] px-7 py-4 mb-10 lg:mb-52 rounded-lg">Shop Now</button>
+                    <div class="w-full h-full"
+                        style="background-image: url(./images/banner4.png); background-size: cover;">
+                        <div class="text-center"
+                            style="background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);">
+                            <h1 class="text-white text-4xl lg:text-7xl font-extrabold pt-10  lg:pt-24 lg:pb-16">
+                                Exotic tastes at your <br> doorstep</h1>
+                            <p class="text-white text-xl font-medium mb-8">We supply highly quality organic products
+                            </p>
+                            <button class="text-white text-xl bg-[#F85559] px-7 py-4 mb-10 lg:mb-44 rounded-lg">Shop
+                                Now</button>
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -135,12 +155,90 @@
                     </div>
                 </div>
             </div>
+            <!-- sub-banner part -->
+            <div
+                class="absolute hidden bottom  bg-white rounded-lg shadow-sub-banner max-w-screen-md max-h-60 px-16 pt-12 pb-20">
+                <div class="flex justify-center gap-24 items-center">
+                    <div><img class="" src="./images/fruit1.png" alt=""><span>Strawberry</span></div>
+                    <div><img src="./images/fruit2.png" alt=""><span>orange</span></div>
+                    <div><img src="./images/fruit3.png" alt=""><span>Mango</span></div>
+                    <div><img src="./images/fruit4.png" alt=""><span>Strawberry</span></div>
+                    <div><img src="./images/fruit5.png" alt=""><span>Mango</span></div>
+                </div>
+            </div>
         </section>
-        
 
 
         <main>
             <!-- deal of the day part -->
+            <section class="max-w-screen-xl max-h-[calc(100vh-77px)] px-5 mx-auto my-8">
+                <div class="flex">
+                    <div class="flex-1">
+                        <h1 class="text-[#121212] text-5xl font-extrabold">Deal of the day</h1>
+                        <p class="text-[#181818] text-base font-medium w-[38rem]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                        making it over 2000 years old.</p>
+                    </div>
+                    <!-- timer -->
+                    <div class="">
+                        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:15;"></span>
+                                </span>
+                                days
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:10;"></span>
+                                </span>
+                                hours
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:24;"></span>
+                                </span>
+                                min
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:51;"></span>
+                                </span>
+                                sec
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <div class="card w-96 bg-base-100 shadow-xl">
+                                <figure class="px-10 pt-10">
+                                    <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center  bottom-1 border-solid border-b-[#181818]">
+                                    <p>12-90$ - 18-85$</p>
+                                    <h2 class="card-title">Apple</h2>
+                                    <div>
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        </div>
+                                    </div>
+                                    <div class="card-actions">
+                                        <button class="btn btn-primary">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="text-white text-xl bg-[#F85559] px-7 py-4 rounded-lg">Show All</button>
+                    </div>
+                </div>
+            </section>
             <!-- meet the team part -->
             <!-- why choose us part -->
             <!-- footer part -->
