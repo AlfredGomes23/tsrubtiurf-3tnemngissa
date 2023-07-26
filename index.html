@@ -33,53 +33,110 @@
 <body class="font-lato">
     <header>
         <!-- navbar part -->
-        <nav>
-            <div class="navbar bg-white lg:bg-[#F85559] rounded-full lg:max-w-screen-xl max-h-24 px-5 mx-auto my-8">
-                <!-- menus -->
-                <div class="flex-1 hidden lg:block">
-                    <ul class="flex gap-7 text-white text-lg font">
+        <nav class="navbar bg-white lg:bg-[#F85559] rounded-full max-w-screen-xl max-h-24 px-5 mx-auto my-8">
+            <!-- menus -->
+            <div class="flex-1 hidden lg:block">
+                <ul class="flex gap-7 text-white text-lg font">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">All Fruits</a></li>
+                </ul>
+            </div>
+            <!-- logo name -->
+            <div class="flex-1  justify-normal lg:justify-center">
+                <div class="flex justify-center items-center">
+                    <img src="./images/logo.png" alt="">
+                    <span class="text[#121212] lg:text-white text-4xl">Fruits Burst</span>
+                </div>
+            </div>
+            <!-- search box -->
+            <div class="flex-1 justify-end hidden lg:flex">
+                <div class="flex gap-2 bg-white w-80 h-11 rounded-full items-center px-2">
+                    <input class="w-11/12 outline-none bg-transparent flex-1 " type="search" placeholder="Search here"
+                        name="" id="">
+                    <i class="fa-solid text-[#121212] fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <!-- menu bar -->
+            <div class="block lg:hidden">
+                <div class="dropdown dropdown-bottom dropdown-end ">
+                    <label tabindex="0" class="btn m-1 bg-transparent border-none"><i
+                            class="fa-solid fa-bars text-2xl text-[#121212]"></i></label>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                        <li>
+                            <div><input class="w-11/12 outline-none" type="search" placeholder="Search here" name=""
+                                    id="">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </li>
                         <li><a href="">Home</a></li>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Shop</a></li>
                         <li><a href="">All Fruits</a></li>
                     </ul>
                 </div>
-                <!-- logo name -->
-                <div class="flex-1  justify-normal lg:justify-center">
-                    <div class="flex justify-center items-center">
-                        <img src="./images/logo.png" alt="">
-                        <span class="text[#121212] lg:text-white text-4xl">Fruits Burst</span>
-                    </div>
-                </div>
-                <!-- search box -->
-                <div class="flex-1 justify-end hidden lg:flex">
-                    <div class="flex gap-2 bg-white w-80 h-11 rounded-full items-center px-2">
-                        <input class="w-11/12 outline-none bg-transparent flex-1 " type="search" placeholder="Search here" name="" id="">
-                        <i class="fa-solid text-[#121212] fa-magnifying-glass"></i>
-                    </div>
-                </div>
-                <!-- menu bar -->
-                <div class="block lg:hidden">
-                    <div class="dropdown dropdown-bottom dropdown-end ">
-                        <label tabindex="0" class="btn m-1 bg-transparent border-none"><i
-                                class="fa-solid fa-bars text-[#121212]"></i></label>
-                        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                            <li>
-                                <div><input class="w-11/12 outline-none" type="search" placeholder="Search here" name=""
-                                        id="">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </div>
-                            </li>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">Shop</a></li>
-                            <li><a href="">All Fruits</a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </nav>
         <!-- banner/hero part -->
+        <section class="max-w-screen-xl max-h-[calc(100vh-77px)] px-5 mx-auto my-8 rou">
+            <div class="carousel w-full rounded-lg">
+                <!-- slide1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="w-full" style="background-image: url(./images/banner1.png); background-size: cover;">
+                        <div class="text-center" style="background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);">
+                            <h1 class="text-white text-4xl lg:text-7xl font-extrabold pt-10 lg:py-24">Exotic tastes at your <br> doorstep</h1>
+                            <p class="text-white text-xl font-medium mt-6 mb-8">We supply highly quality organic products</p>
+                            <button class="text-white text-xl bg-[#F85559] px-7 py-4 mb-10 lg:mb-52 rounded-lg">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div><!-- slide2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="w-full" style="background-image: url(./images/banner2.png); background-size: cover;">
+                        <div class="text-center" style="background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);">
+                            <h1 class="text-white text-4xl lg:text-7xl font-extrabold pt-10 lg:py-24">Exotic tastes at your <br> doorstep</h1>
+                            <p class="text-white text-xl font-medium mt-6 mb-8">We supply highly quality organic products</p>
+                            <button class="text-white text-xl bg-[#F85559] px-7 py-4 mb-10 lg:mb-52 rounded-lg">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div><!-- slide3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="w-full" style="background-image: url(./images/banner3.png); background-size: cover;">
+                        <div class="text-center" style="background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);">
+                            <h1 class="text-white text-4xl lg:text-7xl font-extrabold pt-10 lg:py-24">Exotic tastes at your <br> doorstep</h1>
+                            <p class="text-white text-xl font-medium mt-6 mb-8">We supply highly quality organic products</p>
+                            <button class="text-white text-xl bg-[#F85559] px-7 py-4 mb-10 lg:mb-52 rounded-lg">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div><!-- slide4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="w-full h-full" style="background-image: url(./images/banner4.png); background-size: cover;">
+                        <div class="text-center" style="background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);">
+                            <h1 class="text-white text-4xl lg:text-7xl font-extrabold pt-10 lg:py-24">Exotic tastes at your <br> doorstep</h1>
+                            <p class="text-white text-xl font-medium mt-6 mb-8">We supply highly quality organic products</p>
+                            <button class="text-white text-xl bg-[#F85559] px-7 py-4 mb-10 lg:mb-52 rounded-lg">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
 
 
         <main>
